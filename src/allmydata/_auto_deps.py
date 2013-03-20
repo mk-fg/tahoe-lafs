@@ -69,6 +69,7 @@ install_requires = [
     # needed for cloud backend
     "txAWS == 0.2.1.post5",
     "oauth2client == 1.1.0",
+    "txSkyDrive >= 13.3.0",
 
     # Will be needed to test web apps, but not yet. See #1001.
     #"windmill >= 1.3",
@@ -94,6 +95,7 @@ package_imports = [
     ('mock',            'mock'),
     ('txAWS',           'txaws'),
     ('oauth2client',    'oauth2client'),
+    ('txSkyDrive',      'txskydrive'),
     ('python-dateutil', 'dateutil'),
     ('httplib2',        'httplib2'),
     ('python-gflags',   'gflags'),

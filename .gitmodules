@@ -1,0 +1,3 @@
+[submodule "src/tahoe-lafs-public-clouds"]
+	path = src/tahoe-lafs-public-clouds
+	url = https://github.com/mk-fg/tahoe-lafs-public-clouds.git
