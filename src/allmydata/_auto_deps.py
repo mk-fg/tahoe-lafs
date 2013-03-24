@@ -70,6 +70,7 @@ install_requires = [
     "txAWS == 0.2.1.post5",
     "oauth2client == 1.1.0",
     "txSkyDrive >= 13.3.0",
+    "txboxdotnet",
 
     # Will be needed to test web apps, but not yet. See #1001.
     #"windmill >= 1.3",
@@ -96,6 +97,7 @@ package_imports = [
     ('txAWS',           'txaws'),
     ('oauth2client',    'oauth2client'),
     ('txSkyDrive',      'txskydrive'),
+    ('txboxdotnet',     'txboxdotnet'),
     ('python-dateutil', 'dateutil'),
     ('httplib2',        'httplib2'),
     ('python-gflags',   'gflags'),

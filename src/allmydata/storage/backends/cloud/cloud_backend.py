@@ -19,7 +19,8 @@ from allmydata.storage.backends.cloud.cloud_common import get_share_key, delete_
 from allmydata.mutable.layout import MUTABLE_MAGIC
 
 
-CLOUD_INTERFACES = ("cloud.s3", "cloud.openstack", "cloud.googlestorage", "cloud.msazure", "cloud.skydrive")
+CLOUD_INTERFACES = ("cloud.s3", "cloud.openstack",
+    "cloud.googlestorage", "cloud.msazure", "cloud.skydrive", "cloud.boxdotnet")
 
 
 def get_cloud_share(container, storage_index, shnum, total_size):
