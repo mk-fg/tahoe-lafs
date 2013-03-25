@@ -71,6 +71,7 @@ install_requires = [
     "oauth2client == 1.1.0",
     "txSkyDrive >= 13.3.0",
     "txboxdotnet",
+    "txu1",
 
     # Will be needed to test web apps, but not yet. See #1001.
     #"windmill >= 1.3",
@@ -98,6 +99,7 @@ package_imports = [
     ('oauth2client',    'oauth2client'),
     ('txSkyDrive',      'txskydrive'),
     ('txboxdotnet',     'txboxdotnet'),
+    ('txu1',            'txu1'),
     ('python-dateutil', 'dateutil'),
     ('httplib2',        'httplib2'),
     ('python-gflags',   'gflags'),
