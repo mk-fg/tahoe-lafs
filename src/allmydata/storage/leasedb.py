@@ -182,8 +182,8 @@ class LeaseDB:
                                  " WHERE `storage_index`=? AND `shnum`=? AND `state`!=?",
                                  (STATE_STABLE, si_s, shnum, STATE_GOING))
         self._db.commit()
-        if self._cursor.rowcount < 1:
-            raise NonExistentShareError(si_s, shnum)
+        # if self._cursor.rowcount < 1:
+        # 	raise NonExistentShareError(si_s, shnum)
 
     def mark_share_as_going(self, storage_index, shnum):
         """
@@ -196,8 +196,8 @@ class LeaseDB:
                              " WHERE `storage_index`=? AND `shnum`=? AND `state`!=?",
                              (STATE_GOING, si_s, shnum, STATE_COMING))
         self._db.commit()
-        if self._cursor.rowcount < 1:
-            raise NonExistentShareError(si_s, shnum)
+        # if self._cursor.rowcount < 1:
+        # 	raise NonExistentShareError(si_s, shnum)
 
     def remove_deleted_share(self, storage_index, shnum):
         si_s = si_b2a(storage_index)
@@ -223,8 +223,8 @@ class LeaseDB:
                              " WHERE `storage_index`=? AND `shnum`=?",
                              (used_space, si_s, shnum))
         self._db.commit()
-        if self._cursor.rowcount < 1:
-            raise NonExistentShareError(si_s, shnum)
+        # if self._cursor.rowcount < 1:
+        # 	raise NonExistentShareError(si_s, shnum)
 
     # lease management
 
@@ -247,8 +247,8 @@ class LeaseDB:
                                  " WHERE `storage_index`=? AND `shnum`=?",
                                  (si_s, shnum))
             rows = self._cursor.fetchall()
-            if not rows:
-                raise NonExistentShareError(si_s, shnum)
+            # if not rows:
+            # 	raise NonExistentShareError(si_s, shnum)
 
         for (found_si_s, found_shnum) in rows:
             _assert(si_s == found_si_s, si_s=si_s, found_si_s=found_si_s)
