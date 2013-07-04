@@ -117,7 +117,7 @@ class ConfigMixin:
 
         oldfnames = set()
         for name in [
-            'nickname', 'webport', 'keepalive_timeout', 'log_gatherer.furl',
+            'nickname', 'webport', 'keepalive_timeout',
             'disconnect_timeout', 'advertised_ip_addresses', 'introducer.furl',
             'helper.furl', 'key_generator.furl', 'stats_gatherer.furl',
             'no_storage', 'readonly_storage', 'sizelimit',
